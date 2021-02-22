@@ -20,15 +20,11 @@
     },
     methods:{
       btn(){
-        console.log(this.$store.state.token);
-        this.$store.commit('updateToken',this.psw)
-        console.log(this.$store.state.token);
+        this.$store.commit('setToken',this.psw)
         this.$router.push({path:'/home'})
       },
       reset(){
-        console.log(this.$store.state.token);
-        this.$store.commit('updateToken','')
-        console.log(this.$store.state.token);
+        this.$store.commit('setToken','')
       }
     }
   }

@@ -7,8 +7,16 @@ export default new Vuex.Store({
     token:''
   },
   mutations: {
-    updateToken(state,option){
+    setToken(state,option){
       state.token=option;
+      sessionStorage.setItem('token',option);
+    },
+    getToken(state){
+      state.token=sessionStorage.getItem('token');
+    },
+    clearToken(state){
+      state.token='';
+      sessionStorage.removeItem('token');
     }
   },
   actions: {
