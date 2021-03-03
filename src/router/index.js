@@ -1,10 +1,11 @@
 import Vue from 'vue'
 import VueRouter from 'vue-router'
-
-import Home from '../views/Home.vue'
-import Err404 from '../views/Err404'
-import Login from '../views/Login'
 Vue.use(VueRouter)
+
+
+const Home=()=>import('../views/Home.vue')
+const Err404=()=>import('../views/Err404.vue')
+const Login=()=>import('../views/Login.vue')
 
 const routes = [
   {
@@ -33,7 +34,7 @@ const routes = [
     meta:{
       requireAuth:true
     },
-    component: () => import(/* webpackChunkName: "about" */ '../views/About.vue')
+    component: () => import('../views/About.vue')
   },
   {
     path: '*',
