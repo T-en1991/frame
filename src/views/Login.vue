@@ -20,7 +20,7 @@
     },
     methods:{
       btn(){
-        this.$store.commit('setToken',this.psw)
+        this.$store.commit('user/updateToken',this.psw)
         this.$router.push({path:'/home'})
       },
       reset(){
