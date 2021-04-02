@@ -1,4 +1,4 @@
-const UserModule={
+export default {
   namespaced:true,
   state: {
     token:'',
@@ -9,11 +9,9 @@ const UserModule={
     }
   },
   actions: {
+
   },
   getters:{
 
   }
-}
-export default{
-  UserModule
 }

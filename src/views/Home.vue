@@ -1,20 +1,21 @@
 <template>
   <div class="home">
-    <img alt="Vue logo" src="../assets/logo.png">
-    <keep-alive>
-      <HelloWorld msg="Welcome to Your Vue.js App"/>
-    </keep-alive>
+    <p>home</p>
+    <div v-for="(item) in arr" :key="item">
+      <el-divider></el-divider>
+      <router-link :to="{path:'/about'}">{{item}}</router-link>
+    </div>
   </div>
 </template>
 
 <script>
 // @ is an alias to /src
-import HelloWorld from '@/components/HelloWorld.vue'
 
 export default {
   name: 'Home',
-  components: {
-    HelloWorld,
-  },
 }
 </script>
+
+<style scoped>
+
+</style>

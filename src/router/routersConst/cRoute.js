@@ -1,5 +1,4 @@
 const Login=()=>import('../../views/Login.vue')
-const Home=()=>import('../../views/Home.vue')
 
 // 常量路由
 export default {
@@ -15,14 +14,6 @@ export default {
         component: Login,
         meta:{
           requireAuth:false
-        }
-      },
-      {
-        path: '/home',
-        name: 'Home',
-        component: Home,
-        meta:{
-          requireAuth:true
         }
       },
     ]

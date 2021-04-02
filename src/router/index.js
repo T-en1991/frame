@@ -4,7 +4,7 @@ import cRoute from './routersConst'
 import pRoute from './routersPermission'
 
 Vue.use(VueRouter)
-
+console.log(pRoute);
 const routes = [
   ...cRoute.data,
   ...pRoute.data,
