@@ -1,4 +1,4 @@
-import beforeEach from "./beforeEach"
+import beforeEach from "./beforeEach";
 export default {
-  beforeEach
-}
+  beforeEach,
+};

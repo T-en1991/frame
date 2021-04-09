@@ -1,13 +1,11 @@
 <template>
-    <div>404</div>
+  <div>404</div>
 </template>
 
 <script>
-  export default {
-    name: "Err404"
-  }
+export default {
+  name: "Err404",
+};
 </script>
 
-<style scoped>
-
-</style>
+<style scoped></style>

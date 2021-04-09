@@ -1,10 +1,10 @@
-import http from '/utils/http'
+import http from "/utils/http";
 
 // 登录
-function test(params){
-  return http.post(`users/login`,params)
+function test(params) {
+  return http.post(`users/login`, params);
 }
 
-export default{
-  test
-}
+export default {
+  test,
+};

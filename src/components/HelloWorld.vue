@@ -7,22 +7,20 @@
 </template>
 
 <script>
-  import msgmixin from '../mixins/msg'
-  export default {
-  name: 'HelloWorld',
-  mixins:[msgmixin],
+import msgmixin from "../mixins/msg";
+export default {
+  name: "HelloWorld",
+  mixins: [msgmixin],
   props: {
-    msg: String
+    msg: String,
   },
-  data(){
-    return{
-      a:''
-    }
+  data() {
+    return {
+      a: "",
+    };
   },
-}
+};
 </script>
 
 <!-- Add "scoped" attribute to limit CSS to this component only -->
-<style scoped>
-
-</style>
+<style scoped></style>

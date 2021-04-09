@@ -1,19 +1,16 @@
-const Ex1Module={
-  namespaced:true,
+const Ex1Module = {
+  namespaced: true,
   state: {
-    token:'',
+    token: "",
   },
   mutations: {
-    updateToken(state,option){
-      state.token=option;
-    }
+    updateToken(state, option) {
+      state.token = option;
+    },
   },
-  actions: {
-  },
-  getters:{
-
-  }
-}
-export default{
-  Ex1Module
-}
+  actions: {},
+  getters: {},
+};
+export default {
+  Ex1Module,
+};

@@ -1,15 +1,15 @@
 export default {
-  data(){
-    return{
-      msga:'mixin'
-    }
+  data() {
+    return {
+      msga: "mixin",
+    };
   },
-  mounted(){
-    console.log('mounted:'+this.msga);
+  mounted() {
+    console.log("mounted:" + this.msga);
   },
-  methods:{
-    test(){
-      console.log('methods:'+this.msga);
-    }
-  }
-}
+  methods: {
+    test() {
+      console.log("methods:" + this.msga);
+    },
+  },
+};

@@ -1,17 +1,13 @@
 export default {
-  namespaced:true,
+  namespaced: true,
   state: {
-    token:'',
+    token: "",
   },
   mutations: {
-    updateToken(state,option){
-      state.token=option;
-    }
+    updateToken(state, options) {
+      state.token = options;
+    },
   },
-  actions: {
-
-  },
-  getters:{
-
-  }
-}
+  actions: {},
+  getters: {},
+};
