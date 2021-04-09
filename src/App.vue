@@ -1,8 +1,8 @@
 <template>
   <div id="app">
-    <div style="position: fixed; top: 0">
-      <!--<router-link :to="{ path: '/about' }">123</router-link>-->
-    </div>
+    <!--    <div style="position: fixed; top: 0">
+      <router-link :to="{ path: '/about0/' }">123</router-link>
+    </div>-->
     <router-view />
   </div>
 </template>

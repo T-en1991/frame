@@ -27,7 +27,7 @@ export default {
       },
       children: [
         {
-          path: "/About0c1",
+          path: "About0c1",
           name: "About0c1",
           component: About0c1,
           meta: {

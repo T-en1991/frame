@@ -15,7 +15,7 @@
       <el-submenu key="1111" index="1111">
         <template slot="title">
           <i class="el-icon-location"></i>
-          <span>菜单0</span>
+          <router-link :to="{ path: '/about0/' }">菜单0</router-link>
         </template>
         <el-menu-item-group>
           <el-menu-item key="1111">
@@ -32,7 +32,9 @@
       >
         <template slot="title">
           <i class="el-icon-location"></i>
-          <span>{{ item.menuName }}</span>
+          <router-link :to="{ path: item.path }">{{
+            item.menuName
+          }}</router-link>
         </template>
         <el-menu-item-group v-if="item.children.length">
           <el-menu-item
