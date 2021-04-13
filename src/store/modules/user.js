@@ -6,6 +6,7 @@ export default {
   mutations: {
     updateToken(state, options) {
       state.token = options;
+      sessionStorage.setItem("token", options);
     },
   },
   actions: {},

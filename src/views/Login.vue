@@ -28,6 +28,7 @@ export default {
           path: "/about1",
           meta: {
             requireAuth: true,
+            test: false,
           },
           parentMenuId: "",
           children: [
